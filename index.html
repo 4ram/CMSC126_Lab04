@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Airline Express Online Booking</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+    body {
+      background-image: url("https://i.pinimg.com/originals/55/0b/7a/550b7afbf123fa534ac657745e1d512c.png");
+      background-color: lightblue;
+      background-repeat: no-repeat;
+      background-size: 1366px 768px;
+      color: white;
+    }
+    h1,h2,h3,p,input[type='text']{
+      font-family: 'Montserrat', sans-serif;
+    }
+    h1{
+      text-align: center;
+    }
+    h2{
+      text-align: center;
+    }
+    p{
+      font-size: 10px;
+    }
+</style>
+  </head>
+  <body>
+    <h1>Cloud Airlines</h1>
+    <h2>Online Booking</h2><br>
+    <h3>Passenger and Flight details: </h3><br>
+    <p>Last Name: <input type="text" placeholder="*Required Field" id="LastName"></p><br>
+    <p>First Name:<input type="text" placeholder="*Required Field" id="FirstName"> </p><br>
+    <p>Gender: <input list="Gender" placeholder="*Required Field" name="Gender"> </p><br>
+    <datalist id="Gender">
+      <option value="Male">
+      <option value="Female">
+      <option value="Other">
+    </datalist>
+    <p>Email Address: <input type="text" placeholder="*Required Field" id="Email"> </p><br>
+    <p>Origin: <input type="text" placeholder="*Required Field" id="Origin"> </p><br>
+    <p>Destination: <input type="text" placeholder="*Required Field" id="Destination"> </p><br>
+    <p>Departure Date: <input type="date" id="Departure"> </p><br>
+    <p>Return Date: <input type="date" id="Return"> </p><br>
+	<button type="button" onclick="airlineFunction()">Submit</button>
+  <script src="Airline.js" charset="utf-8"></script>
+  </body>
+</html>
